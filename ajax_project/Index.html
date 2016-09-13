@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<title>Ajax-Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+
+<button type="button" style="margin-left:600px; margin-top:20px; height:40px;" onclick="click()">Click To Get Book List!</button>
+<br><br>
+<table id="demo"></table>
+
+<script>
+function click() {
+  var xhttp = new XMLHttpRequest();             // create request
+  xhttp.onreadystatechange = function() {		//  your actions goes here
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xhttp.open("GET", "books.xml", true);			// open connection via get method
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Title</th><th>Author</th><th>Genre</th></tr>";
+  var x = xmlDoc.getElementsByTagName("Book");
+  for (i = 0; i <x.length; i++) {
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+	x[i].getElementsByTagName("Author")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("Genre")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>
+

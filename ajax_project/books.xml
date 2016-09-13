@@ -1,0 +1,57 @@
+
+<Books>
+  <Book>
+    <Title>Harry Potter and the Sorcerer's Stone</Title>
+    <Author>J.K. Rowling</Author>
+    <Genre>Science Fiction</Genre>
+  </Book>  
+
+ <Book>
+    <Title>The Lord of the Rings:The Fellowship of the Ring</Title>
+    <Author>J.R.R.Tolkein</Author>
+    <Genre>Science Fiction</Genre>
+  </Book>  
+  
+  <Book>
+    <Title>The Secret Life of Salvador Dali</Title>
+    <Author>Salvador Dali</Author>
+    <Genre>Autobiography</Genre>
+  </Book> 
+
+  <Book>
+    <Title>A Lume Spento</Title>
+    <Author>Ezra Pound</Author>
+    <Genre>Poetry</Genre>
+  </Book> 
+  
+  <Book>
+    <Title>The Colony of Unrequited Dreams</Title>
+    <Author>Wayne Johnston</Author>
+    <Genre>History</Genre>
+  </Book> 
+  
+  <Book>
+    <Title>Journey</Title>
+    <Author>James A. Michener</Author>
+    <Genre>Poetry</Genre>
+  </Book> 
+  
+  <Book>
+    <Title>Alice in Wonderland</Title>
+    <Author>Lewis Carroll</Author>
+    <Genre>Fantasy</Genre>
+  </Book> 
+  
+  <Book>
+    <Title>The Chronicles of Narnia</Title>
+    <Author>C.S. Lewis </Author>
+    <Genre>Fantasy</Genre>
+  </Book> 
+  
+  <Book>
+    <Title>The Adventures of Superman</Title>
+    <Author>George Lowther</Author>
+    <Genre>Comic</Genre>
+  </Book> 
+  
+</Books>
